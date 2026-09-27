@@ -21,44 +21,44 @@ const quizQuestions = [
     answers: [
       { text: "London", correct: false },
       { text: "Berlin", correct: false },
-      { text: "Paris", correct: true },
+      { text: "oh wi wi wi, it is Paris, merci", correct: true },
       { text: "Madrid", correct: false },
     ],
   },
   {
-    question: "Which planet is known as the Red Planet?",
+    question: "what does the cow say?",
     answers: [
-      { text: "Venus", correct: false },
-      { text: "Mars", correct: true },
-      { text: "Jupiter", correct: false },
-      { text: "Saturn", correct: false },
+      { text: "mew :3", correct: false },
+      { text: "oh moo moo moo, i speak that too! All day", correct: true },
+      { text: "yo gng who up for some McDonalds?", correct: false },
+      { text: "Tylko jedno w głowie mamKoksu pięć gramOdlecieć samW krainę zapomnieniaW głowie myśli mamKiedy skończy się ten stanGdy już nie będę samBo wjedzie biały węgorz", correct: false },
     ],
   },
   {
-    question: "What is the largest ocean on Earth?",
+    question: "Which one of these did Donald J. Trump say (in public)?",
     answers: [
-      { text: "Atlantic Ocean", correct: false },
-      { text: "Indian Ocean", correct: false },
-      { text: "Arctic Ocean", correct: false },
-      { text: "Pacific Ocean", correct: true },
+      { text: "i don't like yaoi", correct: false },
+      { text: "Sometimes you need a dictator.", correct: true },
+      { text: "QUITE FRANKLY, musky is very HOT! People keep saying yaoi, yaoi! i don't know what that means but it sounds tremendous, like myself quite frankly", correct: false },
+      { text: "I'm going to be daiting you in 10 years.", correct: true },
     ],
   },
   {
-    question: "Which of these is NOT a programming language?",
+    question: "can gregs give you cancer?",
     answers: [
-      { text: "Java", correct: false },
-      { text: "Python", correct: false },
-      { text: "Banana", correct: true },
-      { text: "JavaScript", correct: false },
+      { text: "FUCK NO I LIVE FOR GREGS!!! GREGSS 4 EVVAAAAAA", correct: false },
+      { text: "gregs give you depression, ball cancer, makes your socks soggy and makes you pillow warm", correct: false },
+      { text: "idk tbh", correct: true },
+      { text: "i blame the brexit", correct: false },
     ],
   },
   {
-    question: "What is the chemical symbol for gold?",
+    question: "How old is Markiplyier?",
     answers: [
-      { text: "Go", correct: false },
-      { text: "Gd", correct: false },
-      { text: "Au", correct: true },
-      { text: "Ag", correct: false },
+      { text: "like 32?", correct: false },
+      { text: "a wee lil lad", correct: true },
+      { text: "no way he's 37", correct: true },
+      { text: "WHAT YEAR IS IT", correct: false },
     ],
   },
 ]
@@ -167,15 +167,15 @@ function showResults () {
   const percentage = (score/quizQuestions.length) * 100;
 
   if(percentage === 100) {
-    resultMessage.textContent = "Perfect! You're a genius";
+    resultMessage.textContent = "damn.... u smart";
   } else if (percentage >= 80) {
-    resultMessage.textContent = "Great job! you know your Stuff";
+    resultMessage.textContent = "Good job nephew!";
   } else if (percentage >= 60) {
-    resultMessage.textContent = "Good effort! Keep learning!";
+    resultMessage.textContent = "not quite my tempo";
   } else if (percentage >= 40) {
-    resultMessage.textContent = "Not bad! Try again to improove!";
+    resultMessage.textContent = "Get gud";
   } else {
-    resultMessage.textContent = "Kepp studying! You'll get better!";
+    resultMessage.textContent = "I didn't code 5h+ for you to be THIS bad. Now do it again";
   }
 }
 
