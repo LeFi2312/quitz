@@ -61,6 +61,25 @@ const quizQuestions = [
       { text: "WHAT YEAR IS IT", correct: false },
     ],
   },
+  {
+    question: "What is the most socially acceptable thing to say?",
+    answers: [
+      { text: "KILL JOHN LENON", correct: true },
+      { text: "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное Дружбы народов надёжный оплот! Партия Ленина - сила народная Нас к торжеству коммунизма ведёт!", correct: true },
+      { text: "NIRVANA IS SO PREPPYYYYYY", correct: false },
+      { text: "67", correct: false },
+    ],
+  },
+  {
+    question: "is linux bettere than windows?",
+    answers: [
+      { text: "NO, FORTNIGHT FORREVVAAAAAA", correct: false },
+      { text: "sudo dnf uninstall windows", correct: true },
+      { text: "i need to edge", correct: false },
+      { text: "you can choose wichever OS suits your needs", correct: false },
+    ],
+  },
+
 ]
 
 // QUIZ STATE VARS
@@ -168,6 +187,14 @@ function showResults () {
 
   if(percentage === 100) {
     resultMessage.textContent = "damn.... u smart";
+   
+    // Basic JS redirect example
+  const redirectUser = (newUrl) => {
+  window.location.href = newUrl
+  }
+
+  redirectUser('https://youtu.be/hNKYi_n18nU?si=lN3tAzN7YAvXVCeG')
+
   } else if (percentage >= 80) {
     resultMessage.textContent = "Good job nephew!";
   } else if (percentage >= 60) {
@@ -176,6 +203,10 @@ function showResults () {
     resultMessage.textContent = "Get gud";
   } else {
     resultMessage.textContent = "I didn't code 5h+ for you to be THIS bad. Now do it again";
+    const redirectUser = (newUrl) => {
+  window.location.href = newUrl
+  }
+    redirectUser('https://youtu.be/vR7KLmVThLk?si=WYIS7mW1KfJEbwRz')
   }
 }
 
